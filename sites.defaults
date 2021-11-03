@@ -1,0 +1,23 @@
+# File to control the use of stations in the processing
+#
+# Format: site expt keyword1 keyword2 ....
+#
+#  where the first token is the 4- or 8-character site name (GAMIT uses only 
+#  4 characters, GLOBK allows only 4 unless there are earthquakes or renames), 
+#  the second token is the 4-character experiment name, and the remaining
+#  tokens, read free-format, indicate how the site is to be used in the processing.
+#  All sites for which there are RINEX files in the local directory will be used
+#  automatically and do not need to be listed.
+#    
+#  ftprnx = sites to ftp from rinex data archives.
+#  ftpraw = sites to ftp from raw data archives.
+#  localrx = site names used to search for rinex files on your local system. 
+#            (required in conjunction with rnxfnd path variable set in process.defaults).
+#  xstinfo = sites to exclude from automatic station.info updating.     
+#  xsite   = sites to exclude from processing, all days or specified days
+#
+# Replace 'expt' with your experiment name and edit the following to list sites needed from external archive
+ all_sites sept  localrx xstinfo  
+# templates for removing sites
+ ttth_gps  expt xsite:1999_256-1999_278 xsite:1999_300-1999_365
+
