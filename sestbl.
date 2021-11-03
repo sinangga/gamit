@@ -1,6 +1,6 @@
  Session Table  
 
-Processing Agency = STMKG
+Processing Agency = BMKG
                       
 Satellite Constraint = Y         ; Y/N  (next two lines are free-format but 'all' must be present)     
                  all       a      e      i     n       w       M     rad1   rad2  rad3  rad4  rad5  rad6  rad7  rad8  rad9; 
